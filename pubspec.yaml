@@ -78,7 +78,11 @@ flutter:
     - family: Poppins
       fonts:
         - asset: assets/fonts/Poppins-Regular.ttf
-        - asset: assets/fonts/Poppins-Bold.ttf
+        # - asset: assets/fonts/Poppins-Bold.ttf
+
+    - family: LobsterTwo
+      fonts:
+        - asset: assets/fonts/LobsterTwo-Regular.ttf
 
   #   - family: Trajan Pro
   #     fonts:

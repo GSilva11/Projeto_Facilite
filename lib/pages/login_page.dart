@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../components/textfield.dart';
-
+import '../components/button.dart';
 class LoginPage extends StatelessWidget {
   LoginPage({super.key});
 
@@ -69,10 +69,20 @@ class LoginPage extends StatelessWidget {
                         children: [
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                            child: TextButton(onPressed: () {}, child: Text('Esqueceu a senha?', style: TextStyle(color: Color(0xFF4572c5), fontWeight: FontWeight.bold),),),
+                            child: TextButton(onPressed: () {}, child: Text('Esqueceu a senha?', style: TextStyle(color: Colors.grey[500], fontWeight: FontWeight.w700),),),
                           ),
                         ],
-                      )
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Column(
+                        children: [
+                          MyButton(
+                            
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),

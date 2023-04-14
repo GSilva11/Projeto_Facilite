@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import '../components/textfield.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+  LoginPage({super.key});
+
+  final usernameController = TextEditingController();
+  final passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +14,7 @@ class LoginPage extends StatelessWidget {
         width: double.maxFinite,
         height: double.maxFinite,
         child: Stack(
-          children: <Widget> [
+          children: <Widget>[
             Container(
               decoration: BoxDecoration(
                 gradient: LinearGradient(begin: Alignment.topLeft, colors: [
@@ -20,7 +24,11 @@ class LoginPage extends StatelessWidget {
                 ]),
               ),
             ),
-            Image.asset('assets/images/undraw_Login.png', height: 180, width: double.maxFinite,),
+            Image.asset(
+              'assets/images/undraw_Login.png',
+              height: 180,
+              width: double.maxFinite,
+            ),
             Positioned(
               child: Container(
                 margin: EdgeInsets.only(top: 180),
@@ -33,7 +41,41 @@ class LoginPage extends StatelessWidget {
                     topRight: Radius.circular(32),
                   ),
                 ),
-
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Column(
+                    children: [
+                      Text('Bem vindo', style: TextStyle(fontSize: 24, fontFamily: 'Poppins'),),
+                      Text('Faça login para acessar sua conta',style: TextStyle(fontSize: 16, fontFamily: 'Poppins'),),
+                      SizedBox(
+                        height: 30,
+                      ),
+                      MyTextField(
+                        controller: usernameController,
+                        hintText: 'Email',
+                        obscureText: false,
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      MyTextField(
+                        controller: passwordController,
+                        hintText: 'Senha',
+                         obscureText: true,
+                       
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                            child: TextButton(onPressed: () {}, child: Text('Esqueceu a senha?', style: TextStyle(color: Color(0xFF4572c5), fontWeight: FontWeight.bold),),),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
               ),
             ),
           ],

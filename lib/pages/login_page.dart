@@ -7,6 +7,10 @@ class LoginPage extends StatelessWidget {
   final usernameController = TextEditingController();
   final passwordController = TextEditingController();
 
+  void signUserIn(){
+
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -74,14 +78,17 @@ class LoginPage extends StatelessWidget {
                         ],
                       ),
                       SizedBox(
-                        height: 10,
+                        height: 25,
                       ),
                       Column(
                         children: [
                           MyButton(
-                            
+                            onTap: signUserIn,
                           ),
                         ],
+                      ),
+                      SizedBox(
+                        height: 10,
                       ),
                     ],
                   ),

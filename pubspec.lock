@@ -41,6 +41,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.17.0"
+  convex_bottom_bar:
+    dependency: "direct main"
+    description:
+      name: convex_bottom_bar
+      sha256: ebf0f3deb1e8e99374d844fee7485d2980ec502dedfaad395c12118477933aef
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.2.0"
   cupertino_icons:
     dependency: "direct main"
     description:
@@ -115,6 +123,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.8.0"
+  new_gradient_app_bar:
+    dependency: "direct main"
+    description:
+      name: new_gradient_app_bar
+      sha256: "1bc1dad8ffb062a34ba818e7da709d5ca22fe8a2d88d27a92d97ce352f25b3b5"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.1.5"
   path:
     dependency: transitive
     description:

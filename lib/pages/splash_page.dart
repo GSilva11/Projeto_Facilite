@@ -35,26 +35,19 @@ class _SplashPageState extends State<SplashPage> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    'Facilite',
-                    style: TextStyle(
-                        fontSize: 40,
-                        fontFamily: 'LobsterTwo',
-                        color: Colors.white),
-                  ),
                   SizedBox(
-                      child: Image.asset('assets/images/undraw_Login.png')),
-                  SizedBox(
-                    width: MediaQuery.of(context).size.width * .8,
-                    child: Text(
-                        'A maneira mais rápida e fácil de encontrar o serviço certo',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontFamily: 'Poppins',
-                          color: Colors.white,
-                        )),
-                  ),
+                      child: Image.asset('assets/images/FServicos.png', width: 350, height: 350)),
+                  // SizedBox(
+                  //   width: MediaQuery.of(context).size.width * .8,
+                  //   child: Text(
+                  //       'A maneira mais rápida e fácil de encontrar o serviço certo',
+                  //       textAlign: TextAlign.center,
+                  //       style: TextStyle(
+                  //         fontSize: 16,
+                  //         fontFamily: 'Poppins',
+                  //         color: Color(0xffeeeeee),
+                  //       )),
+                  // ),
                 ],
               ),
             ),

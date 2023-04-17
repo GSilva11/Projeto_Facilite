@@ -1,6 +1,15 @@
+import 'package:facilite_teste/pages/Chat.dart';
+import 'package:facilite_teste/pages/Home.dart';
+import 'package:facilite_teste/pages/about.dart';
+import 'package:facilite_teste/pages/before_authentication.dart';
+import 'package:facilite_teste/pages/forgot_password.dart';
+import 'package:facilite_teste/pages/historic.dart';
 import 'package:facilite_teste/pages/login_page.dart';
-import 'package:facilite_teste/pages/senha_page.dart';
+import 'package:facilite_teste/pages/profile.dart';
+import 'package:facilite_teste/pages/register_page.dart';
+import 'package:facilite_teste/pages/redefine_password.dart';
 import 'package:facilite_teste/pages/splash_page.dart';
+import 'package:facilite_teste/pages/terms.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,10 +27,20 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       initialRoute: '/splash',
+      // initialRoute: '/profile',
       routes: {
         '/splash': (_) => const SplashPage(),
         '/login': (_) =>  LoginPage(),
-        '/senha':(_) => const Senha(),
+        '/home': (_) =>  HomePage(),
+        '/chat': (_) => ChatPage(),
+        '/historic': (_) => HistoricPage(),
+        '/profile':(_) => Profile(),
+        '/facegoo':(_) => BeforeAut(),
+        '/register': (_) => Register(),
+        '/esqueceu':(_) => ForgotPassword(),
+        '/redefinir':(_) => RedefinePassword(),
+        '/termos':(_) => Termos(),
+        '/about':(_) => About(),
       },
     );
   }

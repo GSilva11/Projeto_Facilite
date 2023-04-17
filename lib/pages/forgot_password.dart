@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 import 'dart:ui';
 import 'package:new_gradient_app_bar/new_gradient_app_bar.dart';
 
+=======
+>>>>>>> ab1c3d87d2c4eb173f6b28840550a041926a3940
 import 'package:facilite_teste/components/custom_text.dart';
 import 'package:facilite_teste/components/textfield.dart';
 import 'package:flutter/material.dart';
@@ -18,6 +21,7 @@ class ForgotPassword extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+<<<<<<< HEAD
       // appBar: AppBar(
       //   elevation: 0,
       //   backgroundColor: Colors.blue[600],
@@ -32,6 +36,17 @@ class ForgotPassword extends StatelessWidget {
         gradient: LinearGradient(colors: [Color(0xFF20B5F0),
                   Color(0xFF1D93E2),
                   Color(0xFF4572C5),]),
+=======
+      appBar: AppBar(
+        elevation: 0,
+        // backgroundColor: Color.fromARGB(0, 238, 238, 238),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Color.fromARGB(255, 238, 238, 238),),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+>>>>>>> ab1c3d87d2c4eb173f6b28840550a041926a3940
       ),
       body: Stack(
         children: [

@@ -5,7 +5,10 @@ import 'package:facilite_teste/pages/before_authentication.dart';
 import 'package:facilite_teste/pages/forgot_password.dart';
 import 'package:facilite_teste/pages/historic.dart';
 import 'package:facilite_teste/pages/login_page.dart';
+<<<<<<< HEAD
 import 'package:facilite_teste/pages/menu_bar.dart';
+=======
+>>>>>>> ab1c3d87d2c4eb173f6b28840550a041926a3940
 import 'package:facilite_teste/pages/profile.dart';
 import 'package:facilite_teste/pages/register_page.dart';
 import 'package:facilite_teste/pages/redefine_password.dart';
@@ -32,7 +35,10 @@ class MyApp extends StatelessWidget {
         '/splash': (_) => const SplashPage(),
         '/login': (_) =>  LoginPage(),
         '/home': (_) =>  HomePage(),
+<<<<<<< HEAD
         '/menu':(_) => MyMenuBar(),
+=======
+>>>>>>> ab1c3d87d2c4eb173f6b28840550a041926a3940
         '/chat': (_) => ChatPage(),
         '/historic': (_) => HistoricPage(),
         '/profile':(_) => Profile(),

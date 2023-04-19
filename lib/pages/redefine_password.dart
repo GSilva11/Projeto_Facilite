@@ -17,11 +17,7 @@ class RedefinePassword extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-<<<<<<< HEAD
-        backgroundColor: Colors.blue[600],
-=======
         // backgroundColor: Color.fromARGB(0, 238, 238, 238),
->>>>>>> ab1c3d87d2c4eb173f6b28840550a041926a3940
         leading: IconButton(
           icon: Icon(Icons.arrow_back, color: Color.fromARGB(255, 238, 238, 238),),
           onPressed: () {
@@ -85,11 +81,7 @@ class RedefinePassword extends StatelessWidget {
                         ),
                         MyButton(
                            onTap: () {
-<<<<<<< HEAD
-                            Navigator.pushNamed(context, '/menu');
-=======
                             Navigator.pushNamed(context, '/profile');
->>>>>>> ab1c3d87d2c4eb173f6b28840550a041926a3940
                           },
                           texto: 'Redefinir',
                         ),

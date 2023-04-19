@@ -47,12 +47,12 @@ class About extends StatelessWidget {
                       padding: const EdgeInsets.only(top: 15.0),
                       child: Row(
                         children: [
-                          Flexible(child: criarTexto2('Desenvolvedores')),
+                          Flexible(child: criarTexto2('Tema')),
                         ],
                       ),
                     ),
                     criarTexto(
-                        'is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. '),
+                        'O tema escolhido foi um aplicativo de prestação de serviço. O desígno do aplicativo é facilitar a busca por prestadores de serviço, sendo uma intermediação entre cliente e prestador de serviço.'),
                     SizedBox(
                       height: 20,
                     ),
@@ -111,18 +111,6 @@ class About extends StatelessWidget {
                     ),
                     SizedBox(
                       height: 25,
-                    ),
-                    Row(
-                      children: [
-                        Flexible(
-                          child: criarTexto2('Ferramentas de desenvolvimento'),
-                        ),
-                      ],
-                    ),
-                    criarTexto(
-                        'is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. '),
-                    SizedBox(
-                      height: 20,
                     ),
                   ],
                 ),

@@ -12,7 +12,10 @@ import 'package:facilite_teste/pages/redefine_password.dart';
 import 'package:facilite_teste/pages/splash_page.dart';
 import 'package:facilite_teste/pages/terms.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setEnabledSystemUIOverlays([]);
   runApp(const MyApp());
 }
 

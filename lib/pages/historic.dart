@@ -15,7 +15,7 @@ class HistoricPage extends StatelessWidget {
           children: [
             SizedBox(
               child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 50),
+                padding: const EdgeInsets.symmetric(vertical: 25),
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 10),
                   child: MySearch(
@@ -74,7 +74,7 @@ class HistoricPage extends StatelessWidget {
                 child: Column(
                   children: [
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         criarTexto2('Daniel Alves'),
                         Padding(padding: EdgeInsets.symmetric(horizontal: 35)),
@@ -82,7 +82,7 @@ class HistoricPage extends StatelessWidget {
                       ],
                     ),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         criarTexto('Marido de Aluguel'),
                         Text(
@@ -109,7 +109,7 @@ class HistoricPage extends StatelessWidget {
                 child: Column(
                   children: [
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         criarTexto2('Roberto Lima'),
                         Padding(padding: EdgeInsets.symmetric(horizontal: 30)),
@@ -117,7 +117,7 @@ class HistoricPage extends StatelessWidget {
                       ],
                     ),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         criarTexto('Designer'),
                         Padding(padding: EdgeInsets.symmetric(horizontal: 50)),
@@ -146,7 +146,7 @@ class HistoricPage extends StatelessWidget {
                 child: Column(
                   children: [
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         criarTexto2('Andre Oliveira'),
                         Padding(padding: EdgeInsets.symmetric(horizontal: 25)),
@@ -154,7 +154,7 @@ class HistoricPage extends StatelessWidget {
                       ],
                     ),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         criarTexto('Encanador'),
                         Padding(padding: EdgeInsets.symmetric(horizontal: 50)),

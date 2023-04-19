@@ -48,7 +48,7 @@ class Profile extends StatelessWidget {
                         width: MediaQuery.of(context).size.width,
                         height: MediaQuery.of(context).size.height,
                         decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: Color(0xffeeeeee),
                           borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(20),
                             topRight: Radius.circular(20),

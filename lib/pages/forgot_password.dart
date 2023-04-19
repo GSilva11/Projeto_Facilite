@@ -48,7 +48,7 @@ class ForgotPassword extends StatelessWidget {
                 children: [
                   Container(
                     width: MediaQuery.of(context).size.width * .9,
-                    height: MediaQuery.of(context).size.height * .65,
+                    height: MediaQuery.of(context).size.height * .6,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(32),
                       color: Colors.white,

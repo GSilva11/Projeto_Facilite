@@ -19,16 +19,17 @@ class Register extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+     appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Color.fromARGB(0, 238, 238, 238),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Color(0xFF2d2d2d),),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+      ),
       backgroundColor: Color(0xffeeeeee),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        backgroundColor: Colors.transparent,
-        child: const Icon(Icons.arrow_back_ios_outlined),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
-      floatingActionButtonLocation: FloatingActionButtonLocation.startTop,
-
       body: SingleChildScrollView(
         child: Container(
           child: Column(

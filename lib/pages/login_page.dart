@@ -124,7 +124,7 @@ class LoginPage extends StatelessWidget {
                             children: [
                               MyButton(
                                 onTap: () {
-                                  Navigator.pushNamed(context, '/profile');
+                                  Navigator.pushNamed(context, '/menu');
                                 },
                                 texto: 'Entrar',
                               ),

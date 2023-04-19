@@ -6,7 +6,6 @@ import '../components/app_bar.dart';
 import '../components/button.dart';
 
 class Register extends StatelessWidget {
-
   final usernameController = TextEditingController();
   final emailController = TextEditingController();
   final phoneController = TextEditingController();
@@ -21,17 +20,15 @@ class Register extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xffeeeeee),
-      appBar: 
-      AppBar(
-        elevation: 0,
-        backgroundColor: Color(0xffeeeeee),
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Color(0xff3e4756),),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
-      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        backgroundColor: Colors.transparent,
+        child: const Icon(Icons.arrow_back_ios_outlined),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
+      floatingActionButtonLocation: FloatingActionButtonLocation.startTop,
+
       body: SingleChildScrollView(
         child: Container(
           child: Column(

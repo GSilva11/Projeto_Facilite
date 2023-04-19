@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:facilite_teste/components/custom_text.dart';
 import 'package:facilite_teste/components/textfield.dart';
 import 'package:flutter/material.dart';
@@ -15,16 +17,16 @@ class ForgotPassword extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
         elevation: 0,
-        // backgroundColor: Color.fromARGB(0, 238, 238, 238),
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Color.fromARGB(255, 238, 238, 238),),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
-      ),
+        backgroundColor: Colors.transparent,
+        child: const Icon(Icons.arrow_back_ios_outlined),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
+      floatingActionButtonLocation: FloatingActionButtonLocation.startTop,
+
       body: Stack(
         children: [
           SizedBox(
@@ -46,7 +48,7 @@ class ForgotPassword extends StatelessWidget {
                 children: [
                   Container(
                     width: MediaQuery.of(context).size.width * .9,
-                    height: MediaQuery.of(context).size.height * .6,
+                    height: MediaQuery.of(context).size.height * .65,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(32),
                       color: Colors.white,

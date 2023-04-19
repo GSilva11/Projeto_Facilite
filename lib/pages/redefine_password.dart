@@ -15,16 +15,15 @@ class RedefinePassword extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        backgroundColor: Colors.transparent,
         elevation: 0,
-        // backgroundColor: Color.fromARGB(0, 238, 238, 238),
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Color.fromARGB(255, 238, 238, 238),),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
-      ),
+        child: const Icon(Icons.arrow_back_ios_outlined),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
+      floatingActionButtonLocation: FloatingActionButtonLocation.startTop,
       body: Stack(
         children: [
           SizedBox(
@@ -47,7 +46,7 @@ class RedefinePassword extends StatelessWidget {
                   Container(
                     // margin: const EdgeInsets.symmetric(horizontal: 2.0),
                     width: MediaQuery.of(context).size.width * .9,
-                    height: MediaQuery.of(context).size.height * .4,
+                    height: MediaQuery.of(context).size.height * .45,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(32),
                       color: Colors.white,
@@ -58,8 +57,10 @@ class RedefinePassword extends StatelessWidget {
                           padding: const EdgeInsets.only(top: 15.0),
                           child: Text(
                             'Redefinir senha',
-                            style:
-                                TextStyle(fontSize: 32, fontFamily: 'Poppins', fontWeight: FontWeight.bold),
+                            style: TextStyle(
+                                fontSize: 32,
+                                fontFamily: 'Poppins',
+                                fontWeight: FontWeight.bold),
                           ),
                         ),
                         SizedBox(
@@ -80,8 +81,8 @@ class RedefinePassword extends StatelessWidget {
                           height: 40,
                         ),
                         MyButton(
-                           onTap: () {
-                            Navigator.pushNamed(context, '/profile');
+                          onTap: () {
+                            Navigator.pushNamed(context, '/menu');
                           },
                           texto: 'Redefinir',
                         ),

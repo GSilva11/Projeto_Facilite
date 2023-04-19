@@ -37,3 +37,40 @@ class MyTextField extends StatelessWidget {
     );
   }
 }
+
+class MySearch extends StatelessWidget {
+ final controller;
+ final String hintText;
+
+ 
+  const MySearch({
+    super.key,
+    required this.controller,
+    required this.hintText,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 10.0),
+      child: TextField(
+        controller: controller,
+        decoration: InputDecoration(
+          suffixIcon: Icon(Icons.search),
+          enabledBorder:  OutlineInputBorder(
+            borderSide: BorderSide(color:Color(0xffd9d9d9)),
+            borderRadius: BorderRadius.circular(100),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: Color(0xffd9d9d9)),
+            borderRadius: BorderRadius.circular(100),
+          ),
+          fillColor: Color(0xffd9d9d9),
+          filled: true,
+          hintText: hintText,
+          hintStyle: TextStyle(color: Color(0xff4c4c4c)),
+        ),
+      ),
+    );
+  }
+}
